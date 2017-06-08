@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf14490070966760" configfile="/charityDrop/WebContent/WEB-INF/faces-config.xml">
+  <nodes xsi:type="pageflow:PFPage" name="signup.html" x="216" y="192" id="pf14490076522353" referenceLink="//@navigationRule.0/@fromViewId|" outlinks="pf14490076522354 pf14674342197330" inlinks="pf14490076522354" path="/signup.html"/>
+  <nodes xsi:type="pageflow:PFPage" name="signin.html" id="pf14674342197331" referenceLink="//@navigationRule.0/@navigationCase.0/@toViewId|" inlinks="pf14674342197330" path="/signin.html"/>
+  <links id="pf14490076522354" target="pf14490076522353" source="pf14490076522353" outcome="failure">
+    <bendPoints d1Height="-36" d2Height="-36"/>
+    <bendPoints d1Width="-64" d1Height="-36" d2Width="-64" d2Height="-36"/>
+    <bendPoints d1Width="-64" d2Width="-64"/>
+  </links>
+  <links id="pf14674342197330" target="pf14674342197331" source="pf14490076522353" outcome="success"/>
+</pageflow:Pageflow>

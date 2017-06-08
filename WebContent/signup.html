@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+<head>
+<title>sign up</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link href="css/mycss.css" rel="stylesheet">
+<link rel="stylesheet" href="css/bootstrap.min.modified.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="javascript/myjs.js"></script>
+</head>
+<style> 
+select {
+    width: 200px;
+    font-size:20px;
+     border:none;
+}
+</style>
+<body class="body">
+        <nav class="navbar transbox">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="btn btn-default navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="glyphicon glyphicon-menu-hamburger"></span>
+                        
+                    </button>
+                    <a href="signin.html"><img src="image/logo.png" alt="logo" class="smalllogo"></a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#" class="aa">EVENTS</a></li>
+                        <li><a href="#" class="aa">ABOUT US</a></li>
+                        <li><a href="#" class="aa">FAQs</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+       <div id="background_white">
+           <div class="center">
+        <h2 style="font-weight:bold;">Sign up for Charity Drop</h2>
+        <p style="font-size:20px; color:#808080; margin-bottom:0px; padding-bottom:0px;">Schedule a donation pickup.</p>
+        <p style="font-size:20px; color:#808080; margin-top:0px; padding-top:0px;">Your small help may mean a lot to someone.</p>
+        <a href="#"><img src="image/u22.png"></a>
+        <a href="#"><img src="image/u28.png"></a>
+        <h4>or</h4>
+        <form class="input_font" onsubmit="return checkForm(this);" action="echo" method="POST" enctype="multipart/form-data">
+         <p> 
+         	<select name="ugroup">
+			<option value="Donor">Donor</option>
+			<option value="Driver">Driver</option>
+			<option value="Admin">Admin</option>
+			</select> 
+		</p>
+         <p>
+         <input type="text" name="fname" placeholder="First Name" required>
+         <input type="text" name="lname" placeholder="Last Name" required>
+         </p>
+         <p>
+         <input type="text" name="uid" placeholder="User Name" required>
+         <input type="tel" name="tel" placeholder="Mobile Number" required>
+         </p>
+         <p>
+         <input type="password" name="password" placeholder="Password" required>
+         <input type="password" name="cpassword" placeholder="Comfirm password" required>
+         </p>
+         <p><input type="text" name="address" placeholder="Address" size="48" required></p>
+         <p>
+         <input type="text" name="city" placeholder="City" required>
+         <input type="text" name="state" placeholder="State" style="width:121px;">
+         <input type="text" name="zip" placeholder="Zip" style="width:121px;" required>
+         </p>
+         <p><input type="email" name="email" placeholder="Email Address" size="48" required></p>
+         <div class="imageblock">
+             <div class="inlineline">Add a picture:</div>
+             <div class="inlineline"><input type="file" name="file" accept="image/*" style="font-size:15px;"required></div>
+             <img src="" id="preview" class="imagespace">
+         </div>
+         <div class="block2">
+        <p style="text-align:left; font-size:20px;">How did you come to know about this website?</p>
+        <p style="text-align:left;">
+        <input type="radio" name="howToKnow" value="friends"><span style="font-size:20px; margin-right:15px;">Friends</span>
+        <input type="radio" name="howToKnow" value="facebook"><span style="font-size:20px; margin-right:15px;">Facebook</span>
+        <input type="radio" name="howToKnow" value="newspaper"><span style="font-size:20px; margin-right:15px;">Newspaper</span>
+        </p>
+        <p style="text-align:left;margin:20px 0px;">
+        <input type="checkbox" name="agree" value="termsOfService"> I agree with the <a href="https://formswift.com/terms-of-service">Terms of Service</a>
+        </p>
+        </div>
+        
+        <input type="image" src="image/signup.png" alt="submit" width="500">
+        </form>
+       </div>
+       </div>
+       <footer class="row-footer">
+    <div class="container">
+    <p class="footfoot">Copyright &copy 2015 by Charity Drop. All Rights Reserved.</p>
+    </div>
+    </footer>
+       
+</body>

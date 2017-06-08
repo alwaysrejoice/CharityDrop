@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>usereditprofile</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link href="css/mycss.css" rel="stylesheet">
+        <link href="css/jquery-ui.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/bootstrap.min.modified.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <script src="javascript/jquery.js"></script>
+        <script src="javascript/jquery-ui.js"></script>
+        <script src="javascript/myjs.js"></script>
+    </head>
+    
+   
+          
+   
+    <style>
+        .imageblock1{
+            margin:5px;
+            width:285px;
+            height:100px;
+             /*border: 3px solid #73AD21;*/
+        }
+    .special_position{
+        display:inline;
+        text-align:right;
+    }
+    p.header{
+        line-height:35px;
+        font-size:30px;
+        font-weight:bold;
+    }
+    .active{
+        font-weight:bold;
+        text-decoration:underline;
+    }
+    hr {
+        display: block;
+        margin: 0em;
+        margin-bottom: 0.5em;
+        margin-left: 10px;
+        margin-right: 20px;
+        border-style: inset;
+        border-width: 1px;
+    }
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+    th, td {
+        padding: 4px 20px;
+    }
+    .textsize{
+        font-size:17px;
+        font-weight:bold;
+        color:#808080;
+    }
+    .bigscreen{
+        width:743px;
+    }
+    @media only screen and (max-width: 854px) {
+        .smallscreen {
+            width: 100%;
+        }
+    }
+    @media only screen and (max-width: 584px){
+        .smallscreen-image{
+            width:100%;
+        }
+    }
+    @media only screen and (max-width: 414px){
+        p.header{
+            line-height:25px;
+            font-size:20px;
+            font-weight:bold;
+        }
+
+    }
+    @media only screen and (max-width: 768px){
+        /* For mobile phones: */
+        [class*="col-"]{width: 100%;
+            float: left;
+            padding: 10px;
+            }
+    }
+   
+        </style>
+    
+<body class="body">
+        <nav class="navbar transbox">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="btn btn-default navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+                        
+                    </button>
+                    <a href="#"><img src="image/logo.png" alt="logo" class="smalllogo"></a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#" class="aa">EVENTS</a></li>
+                        <li><a href="#" class="aa">ABOUT US</a></li>
+                        <li><a href="#" class="aa">FAQs</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+   
+   <div id="background_white1">
+       <nav class="navbar">
+           <div class="container-fluid">
+               <div class="navbar-header">
+                   <button type="button" class="btn btn-default navbar-toggle" data-toggle="collapse" data-target="#myNavbar2">
+                       <span class="glyphicon glyphicon-menu-hamburger"></span>
+                       
+                   </button>
+                   <div class="imageblock1">
+                       <div style="float:left;"><img src="" style="width:100px;height:100px;"></div>
+                       <div style="float:left; margin:15px 7px;"><p class="header">Welcome<br>
+                           John Smith</p></div>
+                   </div>
+               </div>
+               <div class="collapse navbar-collapse" id="myNavbar2">
+                   <ul class="nav navbar-nav navbar-right">
+                       <li><a href="user.html" class="nav2">Schedule a Pickup</a></li>
+                       <li><a href="umyhistory.html" class="nav2">My History</a></li>
+                       <li class="active"><a href="#" class="nav2">Edit Profile</a></li>
+                       <li><a href="signin.html" class="nav2">Sign out</a></li>
+                   </ul>
+               </div>
+           </div>
+            <hr>
+       </nav>
+	<form class="center input_font" onsubmit="return checkForm(this);">
+         <p>
+         <input type="text" name="uid" placeholder="User Name" required>
+         <input type="tel" name="tel" placeholder="Mobile Number" required>
+         </p>
+         <p>
+         <input type="password" name="password" placeholder="Password" required>
+         <input type="password" name="cpassword" placeholder="Comfirm password" required>
+         </p>
+         <p><input type="text" name="address" placeholder="Address" size="48" required></p>
+         <p>
+         <input type="text" name="city" placeholder="City" required>
+         <input type="text" name="state" placeholder="State" style="width:121px;">
+         <input type="text" name="zip" placeholder="Zip" style="width:121px;" required>
+         </p>
+         <p><input type="email" name="email" placeholder="Email Address" size="48" required></p>
+                  <p style="padding:20px;"></p>
+
+<hr>
+<div class="center">
+        <input type="image" src="image/savechange.png" alt="submit" width="500" class="smallscreen-image" name="save changes">
+            </div>
+            </form>
+            </div>
+ <footer class="row-footer">
+    <div class="container">
+    <p class="footfoot">Copyright &copy 2015 by Charity Drop. All Rights Reserved.</p>
+    </div>
+    </footer>
+   </body>

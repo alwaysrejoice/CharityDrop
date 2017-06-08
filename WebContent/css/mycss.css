@@ -1,0 +1,185 @@
+.body{
+    margin:15px 10px;
+    padding:0;
+    background-color:#F0F0F0;
+}
+nav.transbox
+{
+    margin: 5px;
+    padding:10px;
+    background-color: #ffffff;
+    opacity:0.6;
+    filter:alpha(opacity=60); /* For IE8 and earlier */
+}
+.back{
+    background-image: url("../image/u0.jpg");
+    background-repeat: no-repeat;
+    width:100%;
+    height:auto;
+    background-size: cover;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+.aa{
+    color: black;
+    font-size:30px;
+    text-decoration:none;
+    margin-right:20px;
+    margin-top:10px;
+    font-weight:bold;
+    
+}
+.nav2{color: #0000FF;
+    font-size:20px;
+    text-decoration:none;
+    margin-right:20px;
+    margin-top:60px;
+    margin-bottom:0px;
+
+    
+}
+.center{text-align: center;}
+.bluetext{
+    background-color:#0000FF;
+    padding:10px;
+    color:#FFFFFF;
+    font-size:30px;
+    text-decoration:none;
+    font-weight:bold;
+}
+.center h1{
+    color:#FFFFFF;
+    font-size:50px;
+    padding:10px;
+    font-weight:bold;
+}
+div.img {
+    margin-right: 60px;
+    margin-left: 60px;
+    margin-bottom:60px;
+    padding: 5px;
+    
+    height: auto;
+    width: auto;
+    float:left;
+    text-align: center;
+}
+
+div.img img {
+    display: inline;
+    margin: 5px;
+    border: 1px solid #ffffff;
+}
+
+div.img desc {
+    text-align: center;
+    width: 200px;
+    margin: 5px;
+}
+.footfoot{
+    bottom:0;
+    color: #0000FF;
+    font-size:12px;
+    text-align:center;
+}
+.contenth1{
+    text-align: center;
+    font-weight:bold;
+    padding:10px;
+}
+.width-1{
+    width:45%;
+    margin:auto;
+}
+
+/*used in signup.html*/
+#background_white{
+    background-image: url("../image/u16.png");
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    background-position:center;
+    margin:100px 125px 50px;
+    padding:20px;
+}
+#background_white1{
+    background-image: url("../image/u16.png");
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    background-position:center;
+    margin:20px 25px 50px;
+    padding:10px 10px;
+}
+.width-2{width:30%;margin:auto;}
+.input_font input{font-size:20px;padding:5px;margin-right:2px;}
+
+.inlineline{display:inline-block; text-align:left;margin-top:50px; font-size:20px;color:#b8b8b8;}
+#align{align:left;}
+.imageblock{
+    position:relative;
+    width:50%;
+    height:180px;
+    margin:auto;
+    margin-bottom:10px;
+}
+.block2{
+    width:45%;
+    height:auto;
+    margin:auto;
+    margin-bottom:10px;
+    padding-left:10px;
+}
+.imagespace{
+    position:absolute;
+    top:20px;
+    right:0;
+    width:120px;
+    height:140px;
+}
+.inputmargin{
+    margin:5px 0px 0px;
+}
+
+input[type=text]:disabled {
+    background: #F0F0F0;
+}
+* {
+    box-sizing: border-box;
+}
+
+@media only screen and (max-width: 768px){
+    /* For mobile phones: */
+  [class*="col-"]{width: 100%;
+    float: left;
+    padding: 10px;
+ }
+}
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+    .col-13 {width: 95%;}
+
+[class*="col-"]{
+   float: left;
+   padding: 10px;
+    /*border: 1px solid red;*/
+}
+
+@media only screen and (max-width:343px){
+    .smalllogo{width:75%}
+}
+@media only screen and (max-width: 900px){
+    .col-m-8{width:66.66%;}
+    .col-m-4{width:33.33%;
+        text-align:right;}
+}
+

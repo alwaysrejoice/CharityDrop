@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<!--
+ To change this license header, choose License Headers in Project Properties.
+ To change this template file, choose Tools | Templates
+ and open the template in the editor.
+ -->
+<html>
+    <head>
+        <title>home</title>
+        <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <link rel="stylesheet" href="css/bootstrap.min.modified.css">
+                    
+                        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+                        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <style>
+        body{
+            margin:0;
+            padding:0;
+        }
+        nav.transbox
+        {
+            margin: 5px;
+            padding:10px;
+            background-color: #ffffff;
+            opacity:0.6;
+            filter:alpha(opacity=60); /* For IE8 and earlier */
+        }
+    .back{
+        background-image: url("image/u0.jpg");
+        background-repeat: no-repeat;
+        width:100%;
+        height:auto;
+        background-size: cover;
+        padding-top:10px;
+        padding-bottom:10px;
+    }
+    .nav a {
+        color: black;
+        font-size:30px;
+        text-decoration:none;
+        margin-right:20px;
+        margin-top:10px;
+        font-weight:bold;
+        
+    }
+    .center{text-align: center;}
+    .bluetext{
+        background-color:#0000FF;
+        padding:10px;
+        color:#FFFFFF;
+        font-size:30px;
+        text-decoration:none;
+        font-weight:bold;
+    }
+    .center h1{
+        color:#FFFFFF;
+        font-size:50px;
+        padding:10px;
+        font-weight:bold;
+    }
+    div.img {
+        margin-right: 60px;
+        margin-left: 60px;
+        margin-bottom:60px;
+        padding: 5px;
+        
+        height: auto;
+        width: auto;
+        float:left;
+        text-align: center;
+    }
+    
+    div.img img {
+        display: inline;
+        margin: 5px;
+        border: 1px solid #ffffff;
+    }
+    
+    div.img desc {
+        text-align: center;
+        width: 200px;
+        margin: 5px;
+    }
+    .footfoot{
+        bottom:0;
+        color: #0000FF;
+        font-size:12px;
+        text-align:center;
+    }
+    .contenth1{
+        text-align: center;
+        font-weight:bold;
+        padding:10px;
+    }
+    .width-1{
+        width:45%;
+        margin:auto;
+    }
+   
+    </style>
+    </head>
+<body>
+    <div class="back">
+    <nav class="navbar transbox">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="btn btn-default navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="glyphicon glyphicon-menu-hamburger"></span>
+                    
+                </button>
+                <a href="#"><img src="image/logo.png" alt="logo"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">EVENTS</a></li>
+                    <li><a href="#">ABOUT US</a></li>
+                    <li><a href="#">FAQs</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="center">
+        <p style="padding:100px"></p>
+       
+        <div class="width-1">
+        <h1>Schedule pickup for your donations now</h1>
+        </div>
+        <p style="padding:10px"></p>
+        <a href="signup.html" class="bluetext">SIGN UP NEW</a>
+        <p style="padding:20px"></p>
+        
+        <form class="input_font" action="signing_in" method="POST" enctype="multipart/form-data">
+            <p style="margin:4px;"><input type="text" name="uname" style="font-size:20px;padding:5px;" placeholder="Username"></p>
+            <p style="margin:4px;"><input type="password" name="pwd" style="font-size:20px;padding:5px;" placeholder="Password"></p>
+            <input type="submit" value="SIGN IN" class="bluetext">
+                    
+        </form>
+        <p style="font-size:20px; margin:10px;"><a href="#" style="background-color: #ffffff; opacity:0.6;padding:5px">Forgot password?</a></p>
+        
+    </div>
+    </div>
+    
+    <h1 class="contenth1">How Charity Drop Works</h1>
+    <div class="container">
+    <div class="img">
+        <div class="desc"><span style="font-size:20px;">1. Request a donation pickup</span></div>
+        <img src="image/requestpick.png" alt="image" style="width:200px;">
+            </div>
+    <div class="img">
+        <div class="desc"><span style="font-size:20px;">2. Describe your donations</span></div>
+        <img src="image/describedonation.jpg" alt="image" style="width:200px;">
+            </div>
+    <div class="img">
+        <div class="desc"><span style="font-size:20px;">3. Get it picked up</span></div>
+        <img src="image/getitpicked.png" alt="image" style="width:200px;">
+            </div></div>
+    <footer class="row-footer">
+    <div class="container">
+    <p class="footfoot">Copyright &copy 2015 by Charity Drop. All Rights Reserved.</p>
+    </div>
+    </footer>
+    
+</body>
+</html>
